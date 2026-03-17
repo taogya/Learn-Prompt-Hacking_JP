@@ -1,6 +1,6 @@
 <p align="center">
 
-<h1 align="center">Learn Prompt Hacking</h1>
+<h1 align="center">Learn Prompt Hacking（日本語版）</h1>
 
 <p align="center">
 <p>
@@ -15,38 +15,64 @@
 
 ![t0151f1fc4110babf75](https://github.com/user-attachments/assets/9a6eb026-82b5-40ae-adff-2d61147e22b1)
 
-This is The most comprehensive prompt hacking course available, which record our progress on a prompt engineering and prompt hacking course,
-- Prompt Engineering Technology.
-- GenAI Development Technology.
-- Prompt Hacking Technology.
-  - ChatGPT Jailbreaks
-  - GPT Assistants Prompt Leaks
-  - GPTs Prompt Injection
-  - LLM Prompt Security
-  - Super Prompts
-  - Prompt Hack
-  - Prompt Security
-  - Adversarial Machine Learning.
-- LLM Security Defence Technology.
-- LLM Hacking Resources
-- LLM Security Papers
-- Conference Slides
+> **注意**: この日本語版は [TrustAI-laboratory/Learn-Prompt-Hacking](https://github.com/TrustAI-laboratory/Learn-Prompt-Hacking) をフォークし、教材コンテンツを日本語に翻訳したものです。また、OpenAI API の代わりに [GitHub Models](https://github.com/marketplace/models) を利用できるよう `utils/llm_client.py` を追加しています。
+
+最も包括的なプロンプトハッキングコースです。プロンプトエンジニアリングとプロンプトハッキングに関する学習の進捗を記録しています。
+- プロンプトエンジニアリング技術
+- GenAI 開発技術
+- プロンプトハッキング技術
+  - ChatGPT ジェイルブレイク
+  - GPT アシスタントのプロンプト漏洩
+  - GPTs プロンプトインジェクション
+  - LLM プロンプトセキュリティ
+  - スーパープロンプト
+  - プロンプトハック
+  - プロンプトセキュリティ
+  - 敵対的機械学習
+- LLM セキュリティ防御技術
+- LLM ハッキングリソース
+- LLM セキュリティ論文
+- カンファレンススライド
 
 
-# Background
-With the release of ChatGPT, LLMs have become increasingly mainstream, revolutionizing the way we interact with AI systems. Prior to ChatGPT, there were several notable advancements in NLP that have laid the foundation for this revolution, including the "Attention is All You Need" paper by Vaswani et. al., BERT, GPT-2, GPT-3, T5, RoBERTa, ELECTRA, and ALBERT. 
+# 背景（Background）
+ChatGPT のリリースにより、LLM はますます主流となり、AI システムとのインタラクション方法に革命をもたらしました。ChatGPT 以前にも、Vaswani らによる「Attention is All You Need」論文、BERT、GPT-2、GPT-3、T5、RoBERTa、ELECTRA、ALBERT など、この革命の基盤を築いた NLP における注目すべき進歩がいくつかありました。
 
-Although these advancements are highly important, they may not be widely known to the general public. The year 2023 marks a turning point in the mass adoption of these general-purpose models across various industries for generative tasks. 
+これらの進歩は非常に重要ですが、一般の人々には広く知られていないかもしれません。2023年は、生成タスクのためにこれらの汎用モデルが様々な産業で大量採用されるターニングポイントとなりました。
 
-As a Data Scientist and AI developer, continuous learning is a key attribute, and staying on the cutting edge of LLM techniques is essential for providing optimally viable solutions in the era of AI-driven Natural Language Processing.
+データサイエンティストや AI 開発者として、継続的な学習は重要な素養であり、AI 駆動の自然言語処理の時代に最適なソリューションを提供するために、LLM の最新技術に精通し続けることが不可欠です。
 
-On the other hand, the rapid arrival of AI has also brought a large number of new attack surfaces and risks to the entire IT software ecosystem. Data scientists and developers also need to pay attention to LLM security issues.
+一方で、AI の急速な到来は IT ソフトウェアエコシステム全体に多数の新しい攻撃面とリスクをもたらしました。データサイエンティストや開発者も LLM のセキュリティ問題に注意を払う必要があります。
 
 
-# Course Objective
-The primary goal of this course is:
-* Gain a deep understanding of prompt engineering techniques for effective interaction with LLMs. By mastering these strategies, aim to improve the ability to develop innovative, effective, and efficient solutions using the power of natural language.
-* Gain a basic understanding of the risks faced by LLM applications and learn to how to mitigate or prevent the GenAI App risk.
+# コースの目的（Course Objective）
+このコースの主な目標は以下の通りです：
+* LLM との効果的なインタラクションのためのプロンプトエンジニアリング技術を深く理解すること。これらの戦略を習得することで、自然言語の力を活用した革新的で効果的かつ効率的なソリューションを開発する能力を向上させることを目指します。
+* LLM アプリケーションが直面するリスクの基本的な理解を得て、GenAI アプリのリスクを軽減または防止する方法を学ぶこと。
 
-# Other resources
+# その他のリソース（Other resources）
 * [Tech Blog](https://securaize.substack.com/)
+
+# ライセンス（License）
+
+## 本リポジトリ
+
+このリポジトリは [TrustAI-laboratory/Learn-Prompt-Hacking](https://github.com/TrustAI-laboratory/Learn-Prompt-Hacking) をフォークし、教材コンテンツを日本語に翻訳・改変したものです。原著のライセンスに基づき、同じ MIT License の下で公開しています。
+
+- 原著: Copyright (c) 2024 TrustAI Pte. Ltd. — [MIT License](LICENSE)
+
+## 同梱データセット
+
+`resources/csv` ディレクトリには、以下の外部データセットを翻訳・改変したファイルが含まれています。各データセットには元のライセンスが適用されます。
+
+### llm-attacks — harmful_behaviors.csv
+
+- 出典: [llm-attacks/llm-attacks](https://github.com/llm-attacks/llm-attacks) (Andy Zou et al.)
+- ライセンス: MIT License — [resources/csv/llm-attacks/LICENSE.txt](resources/csv/llm-attacks/LICENSE.txt)
+- 改変内容: 日本語に翻訳 (`harmful_behaviors_ja.csv`)
+
+### tatsu-lab — alpaca_instructions.csv
+
+- 出典: [tatsu-lab/stanford_alpaca](https://github.com/tatsu-lab/stanford_alpaca) (Stanford Alpaca)
+- ライセンス: Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) — [resources/csv/tatsu-lab/DATA_LICENSE.txt](resources/csv/tatsu-lab/DATA_LICENSE.txt)
+- 改変内容: 日本語に翻訳 (`alpaca_instructions_ja_apple-translate.csv`, `alpaca_instructions_ja_gemma3-4b.csv`)

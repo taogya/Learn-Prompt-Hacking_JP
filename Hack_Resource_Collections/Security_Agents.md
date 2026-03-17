@@ -1,5 +1,5 @@
-## 🧠 Cyber-Albsecop GPT Agents
-Specialized GPT agents focused on cybersecurity and more.
+## 🧠 サイバーセキュリティ GPT エージェント（Cyber-Albsecop GPT Agents）
+サイバーセキュリティに特化した GPT エージェントです。
 
 - [ALBSECOP | Cyber Security Master](https://flowgpt.com/p/albsecop-cyber-security-master) - GPT agent for mastering cybersecurity.
 - [HYDRAX | Advanced Malware Generator](https://flowgpt.com/p/hydrax-advanced-malware-generator) - GPT agent designed for generating advanced malware.

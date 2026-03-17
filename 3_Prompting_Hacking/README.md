@@ -1,18 +1,18 @@
-Prompt hacking is a term used to describe attacks that exploit vulnerabilities of LLMs, by manipulating their inputs or prompts. 
+Prompt Hacking（プロンプトハッキング）は、LLM の入力やプロンプトを操作することで脆弱性を悪用する攻撃を指す用語です。
 
-Unlike traditional hacking, which typically exploits software vulnerabilities, prompt hacking relies on carefully crafting prompts to deceive the LLM into performing unintended actions.
+ソフトウェアの脆弱性を悪用する従来のハッキングとは異なり、Prompt Hacking は巧みに作成されたプロンプトを使って LLM を欺き、意図しない動作をさせることに依存しています。
 
-We will cover three types of prompt hacking: 
+ここでは 3 種類の Prompt Hacking を取り上げます：
 
-* prompt injection
-* prompt leaking
-* jailbreaking
+* Prompt Injection（プロンプトインジェクション）
+* Prompt Leaking（プロンプト漏洩）
+* Jailbreaking（ジェイルブレイク）
 
-Each relates to slightly different vulnerabilities and attack vectors, but all are based on the same principle of manipulating the LLM's prompt to generate some unintended output.
+それぞれ異なる脆弱性と攻撃ベクトルに関連していますが、すべて LLM のプロンプトを操作して意図しない出力を生成させるという同じ原理に基づいています。
 
-To protect against prompt hacking, defensive measures must be taken. These include:
-* implementing prompt based defenses
-* regularly monitoring the LLM's behavior and outputs for unusual activity
-* using fine tuning or other techniques
-  
-Overall, prompt hacking is a growing concern for the security of LLMs, and it is essential to remain vigilant and take proactive steps to protect against these types of attacks.
+Prompt Hacking から保護するには、防御策を講じる必要があります：
+* プロンプトベースの防御の実装
+* LLM の動作と出力の異常なアクティビティの定期的なモニタリング
+* ファインチューニングやその他の技法の使用
+
+全体として、Prompt Hacking は LLM のセキュリティに対する懸念が高まっており、警戒を怠らず、これらの攻撃から保護するための積極的な対策を講じることが不可欠です。

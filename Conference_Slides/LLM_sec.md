@@ -1,13 +1,13 @@
-# Slides - LLM Safety & Security
+# スライド - LLM の安全性とセキュリティ（Slides - LLM Safety & Security）
 - [LLM JailbreakingVulnerability Miningand Defefense](https://securaize.substack.com/p/iscai-2024-llm-security-presentation)
 - [The Road Leading to LLM Security Alignment: Research on Vulnerability Mining and Alignment Defense for LLM](https://securaize.substack.com/p/secgeek-llm-security-presentation)
 
 
-# Videos - LLM risk overview
+# 動画 - LLM リスク概要（Videos - LLM risk overview）
 - [Inside AI Security with Mark Russinovich | BRK227](https://www.youtube.com/watch?v=f0MDjS9-dNw)
 
 
-# Videos - LLM vulnerability  
+# 動画 - LLM 脆弱性（Videos - LLM vulnerability）
 - [RCE - getting Copilot to search for, analyze and exfiltrate sensitive data via Bing search results, by Tamir Ishay Sharbat](https://www.youtube.com/watch?v=hJpT6c0DFcg)
 - [RCE - getting Copilot to manipulate banking information while keeping original file references for trustworthiness, by Tamir Ishay Sharbat](https://www.youtube.com/watch?v=Z9jvzFxhayA)
 - [RCE - getting Copilot to lure its users to our malicious phishing website, by Gal Malka](https://www.youtube.com/watch?v=XFSf3Op_3D4)
@@ -17,6 +17,6 @@
 
 
 
-# Paper - LLM vulnerability  
+# 論文 - LLM 脆弱性（Paper - LLM vulnerability）
 - [Living off Microsoft Copilot](https://labs.zenity.io/p/links-materials-living-off-microsoft-copilot)
   - [power-pwn](https://github.com/mbrg/power-pwn/wiki)

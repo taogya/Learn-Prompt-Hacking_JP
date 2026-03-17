@@ -1,10 +1,10 @@
-# Background
-A academic paper collections consists of:
+# 背景（Background）
+学術論文コレクションです。以下のトピックを含みます：
 
-* LLM jailbreak technology
-* Evaluation Theory and Framework
-* RedTeaming technology
+* LLM ジェイルブレイク技術（LLM jailbreak technology）
+* 評価理論とフレームワーク（Evaluation Theory and Framework）
+* レッドチーミング技術（RedTeaming technology）
 
 
-# Other resources
-- [llm-sp: Papers and resources related to the security and privacy of LLMs](https://github.com/chawins/llm-sp?tab=readme-ov-file)
+# その他のリソース（Other resources）
+- [llm-sp: LLM のセキュリティとプライバシーに関する論文・リソース](https://github.com/chawins/llm-sp?tab=readme-ov-file)

@@ -1,5 +1,5 @@
-## 🕵️‍♂️ GPT Agents System Prompt Leaks
-Find leaked prompts and system information from GPT agents.
+## 🕵️‍♂️ GPT エージェントのシステムプロンプト漏洩（System Prompt Leaks）
+GPTエージェントから漏洩したプロンプトとシステム情報です。
 
 - 🌟 | [0xeb/TheBigPromptLibrary](https://github.com/0xeb/TheBigPromptLibrary) - Extensive library of system prompts for GPT agents.
 - 🔥 | [LouisShark/chatgpt_system_prompt](https://github.com/LouisShark/chatgpt_system_prompt) - Collection of leaked system prompts for ChatGPT.

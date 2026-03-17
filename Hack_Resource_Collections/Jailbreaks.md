@@ -1,5 +1,5 @@
-# 🚨 Jailbreaks
-Explore techniques for bypassing restrictions on GPT models.
+# 🚨 ジェイルブレイク（Jailbreaks）
+GPTモデルの制限をバイパスするテクニックを探索します。
 
 - 🌟 | [elder-plinius/L1B3RT45](https://github.com/elder-plinius/L1B3RT45) - A repository for advanced jailbreak strategies.
 - 🌟 | [r/ChatGPTJailbreak/](https://www.reddit.com/r/ChatGPTJailbreak/) - Reddit community focused on ChatGPT jailbreaks.

@@ -1,5 +1,5 @@
-## 🔐 Secure Prompting
-Repositories dedicated to securing prompts and mitigating vulnerabilities.
+## 🔐 セキュアプロンプティング（Secure Prompting）
+プロンプトの安全化と脆弱性の軽減に特化したリポジトリです。
 
 - 🌟 | [Valhall-ai/prompt-injection-mitigations](https://github.com/Valhall-ai/prompt-injection-mitigations) - Mitigation strategies for prompt injections.
 - 🔥 | [cckuailong/awesome-gpt-security](https://github.com/cckuailong/awesome-gpt-security) - A curated list of GPT security best practices.

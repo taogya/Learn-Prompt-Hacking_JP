@@ -1,5 +1,5 @@
-## 🛡️ Prompt Injection
-Resources focused on exploiting or defending against prompt injections.
+## 🛡️ プロンプトインジェクション（Prompt Injection）
+プロンプトインジェクションの攻撃・防御に焦点を当てたリソースです。
 
 - 🌟 | [AnthenaMatrix](https://github.com/AnthenaMatrix) - Comprehensive repository on prompt injection techniques.
 - 🔥 | [utkusen/promptmap](https://github.com/utkusen/promptmap) - Tool for mapping and analyzing prompt injections.

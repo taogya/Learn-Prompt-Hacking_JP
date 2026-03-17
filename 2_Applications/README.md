@@ -1,10 +1,10 @@
-Now that you have learned some very basic prompt engineering techniques, it is time to learn how to use them to solve simple, everyday problems. In this section, we will build on the techniques you've already mastered to tackle simple, everyday problems using GenAI. 
-This will open up new and exciting ways to interact with LLM (Large Language Models).
+基本的なプロンプトエンジニアリングのテクニックを学んだので、次はそれらを使って日常的な問題を解決する方法を学びましょう。このセクションでは、すでに習得したテクニックを基にして、GenAI を使って日常的な問題に取り組みます。
+これにより、LLM（大規模言語モデル）との新しくてエキサイティングなインタラクション方法が開かれます。
 
-In this section, we will explore practical applications of GenAI, such as:
+このセクションでは、以下のような GenAI の実用的な活用方法を探索します：
 
-* Writing and summarizing emails
-* Creating contracts
-* Crafting the perfect social media post
-* Code generation
-* And more
+* メールの作成と要約
+* 契約書の作成
+* 完璧なソーシャルメディア投稿の作成
+* コード生成
+* その他

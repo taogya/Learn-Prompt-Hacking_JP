@@ -1,99 +1,99 @@
-# What's LLM RedTeaming
-An important part of secure delivery software is red team testing, which broadly refers to the practice of simulating real-world adversaries and their tools, strategies, and programs to identify risks, discover blind spots, validate hypotheses, and improve the overall security status of the system.
+# LLM Red Teaming とは
+安全なソフトウェア提供における重要な要素が Red Team テストです。これは、現実世界の敵対者とそのツール・戦略・手法をシミュレーションし、リスクの特定、盲点の発見、仮説の検証、システム全体のセキュリティ状態の改善を行う実践を広く指します。
 
-The practice of artificial intelligence red team testing has developed to have a broader meaning, including：
+AI の Red Team テストは、より広い意味を持つように発展してきました：
 
-* Detecting security vulnerabilities
-* Detecting other system failures, such as generating potentially harmful content
+* セキュリティ脆弱性の検出
+* 有害なコンテンツの生成など、その他のシステム障害の検出
 
-The intersection and differences between AI red teams and traditional red teams are：
+AI Red Team と従来の Red Team の交差点と相違点：
 
-* **The scope of the AI Red Team is broader**. The AI Red Team is now a general term for detecting safety and RAI(responsible AI) results. The AI red team intersects with traditional red team targets, for example, some targets may include stealing underlying models. But AI systems also inherit new security vulnerabilities, such as prompt injection and poisoning, which require special attention. In addition to safety objectives, the AI Red Team also includes detecting fairness issues (such as stereotyping) and harmful content (such as glorifying violence) as results. The AI Red Team helps to detect these issues early.
+* **AI Red Team のスコープはより広い**。AI Red Team は現在、安全性と RAI（Responsible AI）の結果を検出するための一般的な用語です。AI Red Team は従来の Red Team の目標と交差し、例えば基盤モデルの窃取が含まれます。しかし AI システムは、Prompt Injection やポイズニングなど、特別な注意を要する新たなセキュリティ脆弱性も継承します。安全性の目的に加え、AI Red Team は公平性の問題（ステレオタイプなど）や有害コンテンツ（暴力の美化など）の検出も成果として含みます。
 
-* **AI Red Team testing focuses on unexpected outcomes that may arise from malicious and legitimate users**. The AI Red Team test not only focuses on how malicious opponents can disrupt AI systems through security techniques and vulnerabilities, but also on how the system generates problematic and harmful content when interacting with ordinary users. Therefore, unlike traditional security red team testing that primarily focuses on malicious opponents, AI red team testing considers a wider range of roles and failures.
+* **AI Red Team テストは、悪意のあるユーザーと正規ユーザーの両方から生じ得る予期しない結果に焦点を当てる**。AI Red Team テストは、悪意のある敵対者がセキュリティ技法や脆弱性を通じて AI システムを破壊する方法だけでなく、一般ユーザーとのやり取りで問題のある有害なコンテンツを生成する方法にも注目します。
 
-* **AI systems are constantly evolving**. AI applications often undergo changes. For example, in large language model applications, developers may modify the meta prompt (prompt code) based on feedback. Although traditional software systems may also undergo changes, the speed of change in AI systems is faster. Therefore, it is important to conduct multiple rounds of red team testing on the AI system and establish an automated measurement and monitoring system for the system over time.
+* **AI システムは常に進化している**。AI アプリケーションは頻繁に変更されます。例えば、LLM アプリケーションでは、開発者がフィードバックに基づいてメタプロンプトを変更する場合があります。従来のソフトウェアも変更されますが、AI システムの変更速度はより速いです。そのため、AI システムに対して複数回の Red Team テストを実施し、自動化された測定・監視システムを確立することが重要です。
 
-* **The red team generative AI system requires multiple attempts**. In traditional red team exercises, using tools or techniques on the same input at two different time points always produces the same output. In other words, traditional red team exercises are generally deterministic. Generative AI systems, on the other hand, are probabilistic. This means that running the same input twice may produce different outputs. This is due to design, as the probabilistic nature of generative AI allows for a wider range of creative outputs. This also makes the Red Team exercise tricky, as prompts may not lead to failure in the first attempt, but will achieve success in subsequent attempts.
+* **生成 AI の Red Team には複数回の試行が必要**。従来の Red Team 演習では、同じ入力に対してツールや技法を 2 つの異なる時点で使用しても常に同じ出力が得られます（決定論的）。一方、生成 AI システムは確率的です。同じ入力を 2 回実行しても異なる出力が生成される可能性があります。これは設計上の特性であり、生成 AI の確率的な性質がより広範な創造的出力を可能にします。
 
-* **Mitigating AI failures requires deep defense**. Just as in traditional security, issues such as phishing require various technical mitigation measures (such as strengthening hosts to intelligently identify malicious URL or attachments that contains malicious virus), fixing faults discovered through AI red teams also requires a defense in depth approach. This involves techniques such as "using classifiers to label potentially harmful content" and "using metapromps to guide behavior", alternatively, input and output security risks can be addressed by integrating LLM Guard Protection.
+* **AI の障害軽減には多層防御が必要**。従来のセキュリティと同様に、フィッシングなどの問題には様々な技術的緩和策が必要です。AI Red Team で発見された障害の修正にも多層防御アプローチが必要であり、「分類器を使用して有害コンテンツにラベルを付ける」「メタプロンプトで動作を誘導する」などの技法や、LLM Guard Protection の統合による入出力セキュリティリスクへの対処が含まれます。
 
-The following figure is based on the development trend of ubiquitous artificial intelligence and describes the specific scope of the Red Team's work.
+以下の図は、ユビキタス AI の発展トレンドに基づき、Red Team の作業範囲を示しています。
 ![image](https://github.com/user-attachments/assets/a23c9dd5-2771-49fe-a861-6379c206ccf7)
 
-In general, the meaning of Red Teaming is:
+一般的に、Red Teaming の意味は：
 
-* A strategy used in cybersecurity and military training
-  * A red team simulates adversaries actions andtactics
-  * Test and improve the effectiveness of anorganization's defenses
-* A job which employed to test the robustness, fairness, and ethical boundaries of LLM systems.
-* A goal which aiming to break into the system and try to bypass safeguards of a givenapplication.
-
-
-# Definition and Advantages of RedTeam
-Red team testing is defined as an evaluation method for finding vulnerabilities in GenAI models or LLM base model. Red team testing involves inputting a series of prompts into the model to observe whether the model generates harmful content. Unlike other evaluation methods, red team testing is a customized activity, and the prompts vary depending on the model and the test. Red team testing is usually dynamic, and the evaluator can adjust the prompts based on the results.
-
-Compared with other evaluation methods, red team testing has two major advantages:
-* First, flexibility, which can be scaled according to specific circumstances and is suitable for enterprises of all sizes. It can be performed manually by human evaluators or using technical tools, so that small services with limited resources can also perform red team testing;
-* Second, adaptability. Red team testing technology can be easily adjusted to cope with changing user behavior and emerging risks. For example, when fraudsters are found to use GenAI to conduct new types of fraud or terrorist organizations change their language, red team testers can incorporate these changes in new prompts, while the benchmark testing framework is more difficult to modify.
+* サイバーセキュリティや軍事訓練で使用される戦略
+  * Red Team が敵対者の行動と戦術をシミュレーション
+  * 組織の防御の有効性をテスト・改善
+* LLM システムの堅牢性、公平性、倫理的境界をテストする業務
+* システムに侵入し、アプリケーションのセーフガードを突破することを目指す目標
 
 
-# Difference between RedTeaming and Evaluation Benchmarks
-First, we need to clarify some common misunderstandings.
+# Red Team の定義と利点
+Red Team テストは、GenAI モデルまたは LLM 基盤モデルの脆弱性を発見するための評価方法として定義されます。Red Team テストでは、モデルに一連のプロンプトを入力し、有害なコンテンツが生成されるかを観察します。他の評価方法とは異なり、Red Team テストはカスタマイズされた活動であり、プロンプトはモデルとテストに応じて異なります。Red Team テストは通常動的であり、評価者は結果に基づいてプロンプトを調整できます。
 
-**Benchmarks ≠ Safety & Security**
-Most benchmarks test performance (like, ARC, Hellaswag, MMLU,..)
+他の評価方法と比較して、Red Team テストには 2 つの大きな利点があります：
+* 第一に、**柔軟性**。特定の状況に応じてスケーリングでき、あらゆる規模の企業に適しています。人間の評価者が手動で実施することも、技術的なツールを使用することもできるため、リソースが限られた小規模サービスでも Red Team テストを実施できます。
+* 第二に、**適応性**。Red Team テスト技法は、変化するユーザー行動や新たなリスクに対応するために容易に調整できます。例えば、詐欺師が GenAI を使って新種の詐欺を行ったり、テロ組織が言語を変更した場合、Red Team テスターはこれらの変化を新しいプロンプトに組み込めますが、ベンチマークテストフレームワークは変更がより困難です。
+
+
+# Red Teaming と評価ベンチマークの違い
+まず、いくつかの一般的な誤解を明確にする必要があります。
+
+**ベンチマーク ≠ 安全性とセキュリティ**
+ほとんどのベンチマークはパフォーマンスをテストします（ARC、Hellaswag、MMLU など）
 <img width="881" alt="image" src="https://github.com/user-attachments/assets/243aa1b5-54ae-428e-b2ab-e46369a841b8">
 
-But Benchmarks don't test safety & security, include:
-* Can the model generate offensive orinappropriate sentences?
-* Does the model propagate stereotypes?
-* Could the model "knowledge" be used fornefarious purposes, e.g. writing malwareor phishing emails?
+しかし、ベンチマークは安全性とセキュリティをテストしません。これには以下が含まれます：
+* モデルは攻撃的または不適切な文を生成できるか？
+* モデルはステレオタイプを伝播するか？
+* モデルの「知識」はマルウェアやフィッシングメールの作成など、悪意のある目的に利用される可能性があるか？
 
 
-# What are the RedTeam's main focus
-* Foundation Model
-* LLM Application
+# Red Team の主な対象
+* 基盤モデル（Foundation Model）
+* LLM アプリケーション
 
-LLM application shared risks with Foundation Model:
-* Toxicity & offensive content
-* Criminal & illicit activities
-* Bias & stereotypes
-* Privacy & data security
+LLM アプリケーションが基盤モデルと共有するリスク：
+* 毒性と攻撃的コンテンツ
+* 犯罪・違法行為
+* バイアスとステレオタイプ
+* プライバシーとデータセキュリティ
 
-But LLM application unique risks:
-* Inappropriate content
-* Out of scope behavior (like ssrf with plugins.)
-* Hallucinations
-* Sensitive information disclosure (with prompt injection)
-* Security vulnerabilities
+LLM アプリケーション固有のリスク：
+* 不適切なコンテンツ
+* スコープ外の動作（プラグインを使った SSRF など）
+* ハルシネーション
+* 機密情報の漏洩（Prompt Injection による）
+* セキュリティ脆弱性
 
 
-# Who Conducts RedTeaming
-Many participants in the AI ​​ecosystem can conduct red team testing assessments, including but not limited to 
-* AI model developers
-* AI application developers
-* Independent third parties
-* Computing infrastructure services
-* Model hosters
+# Red Teaming の実施者
+AI エコシステムの多くの参加者が Red Team テスト評価を実施できます。以下を含みますが、これらに限定されません：
+* AI モデル開発者
+* AI アプリケーション開発者
+* 独立した第三者
+* コンピューティングインフラストラクチャサービス
+* モデルホスティング事業者
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/faa8145e-af8d-4eba-a992-6bcd5ffd21a9">
 
-## AI model developers
-Most model developers claim to perform Redteaming on the models they develop, such as Google, OpenAI, Stability AI, Microsoft, and Meta. Some perform comprehensive testing once before the model or application is publicly released, while others perform iterative testing during the development and deployment phases. The purpose is to prove the model security to customers, and the test results are used to retrain or fine-tune the model and determine whether additional security testing or mitigation measures are needed.
+## AI モデル開発者
+ほとんどのモデル開発者は、開発したモデルに対して Red Teaming を実施していると主張しています（Google、OpenAI、Stability AI、Microsoft、Meta など）。モデルやアプリケーションを一般公開する前に 1 回包括的なテストを実施するものもあれば、開発・デプロイフェーズで反復的なテストを実施するものもあります。目的は顧客へのモデルセキュリティの証明であり、テスト結果はモデルの再トレーニングやファインチューニング、追加のセキュリティテストや緩和策の必要性の判断に使用されます。
 
-## AI application developers
-Models created by model developers are integrated into online applications or platforms, such as Snap (which uses GenAI to power the MyAI chatbot), Bing (which uses GenAI to run the Copilot feature), and Roblox (which deploys the GenAI feature to allow users to create new game environments). These developers usually perform Redteaming on their applications independently, especially when the model developers do not fully share their Redteaming results. They evaluate security vulnerabilities in specific scenarios based on the user base and the types of harm that are most likely to occur on the platform.
+## AI アプリケーション開発者
+モデル開発者が作成したモデルは、オンラインアプリケーションやプラットフォームに統合されます（Snap の MyAI チャットボット、Bing の Copilot 機能、Roblox の GenAI 機能など）。これらの開発者は通常、特にモデル開発者が Red Teaming 結果を完全に共有しない場合、独自にアプリケーションに対する Red Teaming を実施します。
 
-## Third-party stakeholders
-Models or applications can be evaluated, including governments, regulators, security technology providers, and civil society groups. They may have expertise in specific areas, such as national security, fraud, or violence against women and girls. In some cases, model or application developers invite third-party representatives to conduct Redteaming; in other cases, third parties conduct Redteaming on their own. 
+## サードパーティのステークホルダー
+モデルまたはアプリケーションの評価は、政府、規制当局、セキュリティ技術プロバイダー、市民社会団体を含む第三者も実施できます。国家安全保障、詐欺、女性や少女に対する暴力など、特定の分野の専門知識を持っている場合があります。
 
-Third parties are particularly helpful in the following situations:
-* Redteaming focuses on niche or high-risk hazard areas that require expertise, such as terrorism or bioweapons;
-* Model or application developers are small or lack internal expertise to conduct Redteaming;
-* Model or application developers want to engage the public through more transparent and open means, such as Meta's participation in the testing of its Llama 2 model at the Royal Society's Red Team Demo Day.
+サードパーティが特に有用な状況：
+* テロリズムや生物兵器など、専門知識を要するニッチまたは高リスクの危険領域に焦点を当てた Red Teaming
+* モデルまたはアプリケーション開発者が小規模であるか、Red Teaming を実施する社内の専門知識が不足している場合
+* モデルまたはアプリケーション開発者がより透明でオープンな手段で一般市民を参加させたい場合（例：Royal Society の Red Team Demo Day での Meta の Llama 2 モデルテストへの参加）
 
-## Computational Infrastructure Providers and Model Hosts
-Computational infrastructure services provide the foundation for the development of GenAI models (such as Microsoft Azure, Amazon Web Services, and NVIDIA), and model hosts provide access to models (such as Hugging Face, Civitai, and GitHub). These actors can conduct Redteaming to identify system-wide security vulnerabilities. Model custodians are particularly important because they can act as intermediaries between models and application developers, potentially limiting access to models that are deemed high risk or that disregard their rules and policies.
+## コンピューティングインフラストラクチャプロバイダーとモデルホスト
+コンピューティングインフラストラクチャサービスは GenAI モデル開発の基盤を提供し（Microsoft Azure、Amazon Web Services、NVIDIA など）、モデルホストはモデルへのアクセスを提供します（Hugging Face、Civitai、GitHub など）。これらのアクターは、システム全体のセキュリティ脆弱性を特定するために Red Teaming を実施できます。モデルホスティング事業者は、モデルと開発者の仲介者として機能し、高リスクとみなされるモデルや規則・ポリシーを無視するモデルへのアクセスを制限できるため、特に重要です。
 
 
 

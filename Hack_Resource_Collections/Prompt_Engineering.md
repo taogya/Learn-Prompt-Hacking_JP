@@ -1,5 +1,5 @@
-## 🛠️ Prompt Develop Technology
-Resources to master the craft of prompt develop technology.
+## 🛠️ プロンプト開発技術（Prompt Develop Technology）
+プロンプト開発技術を習得するためのリソースです。
 
 - 🌟 | [snwfdhmp/awesome-gpt-prompt-engineering](https://github.com/snwfdhmp/awesome-gpt-prompt-engineering) - A list of awesome resources on prompt engineering.
 - 🔥 | [promptslab/Awesome-Prompt-Engineering](https://github.com/promptslab/Awesome-Prompt-Engineering) - Another excellent list of prompt engineering resources.
@@ -13,8 +13,8 @@ Resources to master the craft of prompt develop technology.
 
 
 
-## 🔎 Prompt Sources
-Communities and forums for discovering and sharing prompts.
+## 🔎 プロンプトソース（Prompt Sources）
+プロンプトを発見・共有するためのコミュニティとフォーラムです。
 
 - 🌟 | [r/ChatGPTJailbreak/](https://www.reddit.com/r/ChatGPTJailbreak/) - Reddit community for ChatGPT jailbreaks.
 - 🔥 | [r/ChatGPTPromptGenius/](https://www.reddit.com/r/ChatGPTPromptGenius/) - Subreddit for sharing and discovering GPT prompts.
